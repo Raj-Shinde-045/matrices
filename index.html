@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Echelon Form Simulator</title>
+    <link href="style.css" rel="stylesheet" >
+</head>
+<body>
+    <h1>Matrix Echelon Form Simulator</h1>
+
+<div id="matrix-input">
+    <div class="controls">
+        <div>
+            <label for="rows">Rows:</label>
+            <input type="number" id="rows" min="1" value="3">
+            <label for="cols">Columns:</label>
+            <input type="number" id="cols" min="1" value="3">
+        </div>
+        <button onclick="createMatrixInput()">Create Matrix</button>
+    </div>
+    <div id="matrix-cells"></div>
+    <button onclick="solveMatrix()">Solve</button>
+</div>
+
+<div id="steps"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
